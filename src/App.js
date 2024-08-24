@@ -44,7 +44,6 @@ const App = () => {
         <UpgradesList
           planetsDestroyed={planetsDestroyed}
           setBuilding={setBuilding}
-          building={building}
           setCredit={setCredit}
           credit={credit}
         />

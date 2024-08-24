@@ -1,25 +1,23 @@
 const UpgradesAction = ({
   upgradeObject,
   setBuilding,
-  building,
   setCredit,
   credit,
   planetsDestroyed,
-  isPurchased,
 }) => {
-  const playerButtonClicked = () => {
-    setBuilding(building + upgradeObject.affect);
+  const upgradeButtonClicked = () => {
+    setBuilding(upgradeObject.affect);
     setCredit(credit - upgradeObject.price);
     document.getElementById(upgradeObject.name).remove();
   };
 
-  if (planetsDestroyed < upgradeObject.threshold || isPurchased) {
+  if (planetsDestroyed < upgradeObject.threshold) {
     return null;
   }
 
   return (
     <div className="action-buttons">
-      <button onClick={playerButtonClicked} className="action-button">
+      <button onClick={upgradeButtonClicked} className="action-button">
         {upgradeObject.name}
       </button>
       <p>{upgradeObject.description}</p>
