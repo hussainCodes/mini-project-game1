@@ -13,8 +13,6 @@ const App = () => {
     setCredit(credit + building);
   };
 
-  // const attackButton = () => setBuilding(building+2);
-
   return (
     <div className="main-div">
       <div className="header">
@@ -28,7 +26,7 @@ const App = () => {
             src="https://icones.pro/wp-content/uploads/2021/05/icone-base-donnees-jaune.png"
             alt="coins"
           />
-          <h3>{credit}</h3>
+          <h3>x{credit}</h3>
         </div>
       </div>
 
@@ -43,7 +41,13 @@ const App = () => {
 
       <div className="upgrade-list">
         <h3>available upgrades:</h3>
-        <UpgradesList setBuilding={setBuilding} building={building} />
+        <UpgradesList
+          planetsDestroyed={planetsDestroyed}
+          setBuilding={setBuilding}
+          building={building}
+          setCredit={setCredit}
+          credit={credit}
+        />
       </div>
     </div>
   );
