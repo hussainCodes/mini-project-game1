@@ -1,15 +1,26 @@
-import React from "react";
 import upgrades from "../assets/data.js";
 import UpgradesAction from "./UpgradesAction";
 
-const UpgradesList = ({ setBuilding, building }) => {
+const UpgradesList = ({
+  planetsDestroyed,
+  setBuilding,
+  setCredit,
+  credit,
+  building,
+}) => {
   let upgradesList = upgrades.map((upgrade) => (
-    <UpgradesAction
-      upgradeObject={upgrade}
-      setBuilding={setBuilding}
-      building={building}
-    />
+    <div id={upgrade.name}>
+      <UpgradesAction
+        upgradeObject={upgrade}
+        setBuilding={setBuilding}
+        setCredit={setCredit}
+        credit={credit}
+        planetsDestroyed={planetsDestroyed}
+        building={building}
+      />
+    </div>
   ));
+
   return <div className="upgrades-action-cards">{upgradesList}</div>;
 };
 
