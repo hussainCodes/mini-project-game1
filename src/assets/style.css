@@ -5,9 +5,28 @@
   margin: 20px;
 }
 
-body {
-  background-color: rgb(1, 1, 21);
+
+body{
+    background-color:rgb(6, 6, 60);
 }
+
+
+.header{
+display: flex;
+justify-content: space-between;
+margin: 10px;
+text-shadow: 0 0 5px white;
+}
+
+
+.player{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 5px;
+
+
 
 p {
   color: rgb(59, 73, 117);
@@ -17,6 +36,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 10px;
+
 }
 
 .logo {
@@ -38,6 +58,30 @@ p {
   align-items: start;
 }
 
+
+
+.player-button{
+ width: 50vh;
+ height: 4vh;
+background-color: red;
+border-radius: 40px ;
+border: black;
+box-shadow: 0 0 5px red,
+0 0 25px red;
+text-shadow: 0 0 5px black ;
+
+}
+
+
+
+.pic{
+width: 50px;
+}
+
+.coin-img{
+    width: 20px;
+    
+
 .action-buttons {
   display: flex;
   flex-direction: column;
@@ -50,10 +94,6 @@ p {
   height: 30px;
 }
 
-.player-button {
-  background-color: red;
-  color: white;
-  border-radius: 5px;
 }
 
 .pic {
@@ -63,6 +103,14 @@ p {
 .coin-img {
   width: 20px;
 }
+.upgrade-list{
+
+  text-shadow: 0 0 5px white;
+  
+
+
+}
+
 
 .credit {
   display: flex;
