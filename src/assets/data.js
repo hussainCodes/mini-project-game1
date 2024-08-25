@@ -10,7 +10,7 @@ const upgrades = [
     name: "force choke an annoying admiral",
     description: "Triples planets destroyed per click for 40 Galactic Credits ",
     affect: 3,
-    threshold: 90,
+    threshold: 50,
     price: 40,
   },
   {

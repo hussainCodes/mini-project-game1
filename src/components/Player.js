@@ -1,10 +1,7 @@
-import React from "react";
 import AnimatedNumbers from "react-animated-numbers";
-
 import "../assets/style.css";
 
-const Player = ({ planetsDestroyed, add, building, num }) => {
-  num = planetsDestroyed;
+const Player = ({ planetsDestroyed, add, building }) => {
   return (
     <div className="player">
       <h1>
@@ -14,14 +11,14 @@ const Player = ({ planetsDestroyed, add, building, num }) => {
             type: "spring",
             duration: 0.1,
           })}
-          animateToNumber={num}
+          animateToNumber={planetsDestroyed}
           fontStyle={{
-            fontSize: 40,
+            fontSize: 90,
             color: "white",
+            width: 90,
           }}
         />
       </h1>
-      {/* <h1>{planetsDestroyed}</h1> */}
 
       <h4>Planets Destroyed</h4>
       <button className="player-button" onClick={add}>

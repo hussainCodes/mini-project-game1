@@ -9,6 +9,10 @@ body {
   background-color: rgb(1, 1, 21);
 }
 
+p {
+  color: rgb(59, 73, 117);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -37,16 +41,19 @@ body {
 .action-buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   color: white;
 }
 
 .action-button {
   background-color: blue;
+  border-radius: 5px;
+  height: 30px;
 }
 
 .player-button {
   background-color: red;
+  color: white;
+  border-radius: 5px;
 }
 
 .pic {
