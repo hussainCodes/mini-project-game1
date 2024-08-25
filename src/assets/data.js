@@ -18,7 +18,7 @@ const upgrades = [
     description:
       "Quadruples planets destroyed per click for 70 Galactic Credits ",
     affect: 4,
-    threshold: 200,
+    threshold: 70,
     price: 70,
   },
 ];

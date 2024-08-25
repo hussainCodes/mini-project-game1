@@ -22,7 +22,7 @@ const Player = ({ planetsDestroyed, add, building }) => {
 
       <h4>Planets Destroyed</h4>
       <button className="player-button" onClick={add}>
-        Destroy Planet
+        Destroy Planets
       </button>
       <p>{building} planets per click</p>
     </div>
