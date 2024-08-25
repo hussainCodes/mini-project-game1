@@ -12,7 +12,7 @@ const App = () => {
     setPlanetsDestroyed(planetsDestroyed + building);
     setCredit(credit + building);
   };
-
+   
   // const attackButton = () => setBuilding(building+2);
 
   return (
@@ -42,7 +42,7 @@ const App = () => {
       </div>
 
       <div className="upgrade-list">
-        <h3>available upgrades:</h3>
+        <h3>available upgrades: </h3>
         <UpgradesList setBuilding={setBuilding} building={building} />
       </div>
     </div>

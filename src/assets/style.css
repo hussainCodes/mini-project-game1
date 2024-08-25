@@ -5,7 +5,7 @@ color:aliceblue;
 }
 
 body{
-    background-color:rgb(1, 1, 21);
+    background-color:rgb(6, 6, 60);
 }
 
 
@@ -13,6 +13,7 @@ body{
 display: flex;
 justify-content: space-between;
 margin: 10px;
+text-shadow: 0 0 5px white;
 }
 
 
@@ -22,6 +23,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 5px;
+
 }
 
 
@@ -46,8 +48,17 @@ background-color: blue;
 
 
 .player-button{
+ width: 50vh;
+ height: 4vh;
 background-color: red;
+border-radius: 40px ;
+border: black;
+box-shadow: 0 0 5px red,
+0 0 25px red;
+text-shadow: 0 0 5px black ;
+
 }
+
 
 
 .pic{
@@ -56,6 +67,7 @@ width: 50px;
 
 .coin-img{
     width: 20px;
+    
 }
 
 .credit{
@@ -68,5 +80,13 @@ width: 50px;
     display: flex;
     gap: 30px;
 }
+.upgrade-list{
+
+  text-shadow: 0 0 5px white;
+  
+
+
+}
+
 
 
