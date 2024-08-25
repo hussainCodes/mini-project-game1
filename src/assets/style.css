@@ -1,72 +1,69 @@
-.main-div{
-background-color:rgb(1, 1, 21);
-height: 100vh;
-color:aliceblue;
+.main-div {
+  background-color: rgb(1, 1, 21);
+  height: 100vh;
+  color: aliceblue;
+  margin: 20px;
 }
 
-body{
-    background-color:rgb(1, 1, 21);
+body {
+  background-color: rgb(1, 1, 21);
 }
 
-
-.header{
-display: flex;
-justify-content: space-between;
-margin: 10px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
 
-
-.player{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 5px;
+.logo {
+  display: flex;
+  gap: 5px;
 }
 
-
-.upgrade-list{
-display: flex;
-flex-direction: column;
-align-items: start;
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
-
-.action-buttons{
-display: flex;
-flex-direction: column;
-gap: 10px;
-color: white;
+.upgrade-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-
-.action-button{
-background-color: blue;
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
 }
 
-
-.player-button{
-background-color: red;
+.action-button {
+  background-color: blue;
 }
 
-
-.pic{
-width: 50px;
+.player-button {
+  background-color: red;
 }
 
-.coin-img{
-    width: 20px;
+.pic {
+  width: 50px;
 }
 
-.credit{
-    display: flex;
-    width: 30px;
-    height: 30px;
+.coin-img {
+  width: 20px;
 }
 
-.upgrades-action-cards{
-    display: flex;
-    gap: 30px;
+.credit {
+  display: flex;
+  width: 30px;
+  height: 30px;
 }
 
-
+.upgrades-action-cards {
+  display: flex;
+  gap: 30px;
+}

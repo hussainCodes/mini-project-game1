@@ -1,7 +1,13 @@
 import upgrades from "../assets/data.js";
 import UpgradesAction from "./UpgradesAction";
 
-const UpgradesList = ({ planetsDestroyed, setBuilding, setCredit, credit }) => {
+const UpgradesList = ({
+  planetsDestroyed,
+  setBuilding,
+  setCredit,
+  credit,
+  building,
+}) => {
   let upgradesList = upgrades.map((upgrade) => (
     <div id={upgrade.name}>
       <UpgradesAction
@@ -10,6 +16,7 @@ const UpgradesList = ({ planetsDestroyed, setBuilding, setCredit, credit }) => {
         setCredit={setCredit}
         credit={credit}
         planetsDestroyed={planetsDestroyed}
+        building={building}
       />
     </div>
   ));

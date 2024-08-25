@@ -4,7 +4,7 @@ import "../assets/style.css";
 
 const Logo = () => {
   return (
-    <div>
+    <div className="logo">
       <img src={deathStar} alt="death-star" className="pic"></img>
       <h2> The death star</h2>
     </div>

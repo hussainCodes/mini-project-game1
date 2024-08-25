@@ -4,9 +4,10 @@ const UpgradesAction = ({
   setCredit,
   credit,
   planetsDestroyed,
+  building,
 }) => {
   const upgradeButtonClicked = () => {
-    setBuilding(upgradeObject.affect);
+    setBuilding(building * upgradeObject.affect);
     setCredit(credit - upgradeObject.price);
     document.getElementById(upgradeObject.name).remove();
   };

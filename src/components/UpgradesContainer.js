@@ -6,6 +6,7 @@ const UpgradesContainer = ({
   setBuilding,
   setCredit,
   credit,
+  building,
 }) => {
   return (
     <div className="upgrade-list">
@@ -15,6 +16,7 @@ const UpgradesContainer = ({
         setBuilding={setBuilding}
         setCredit={setCredit}
         credit={credit}
+        building={building}
       />
     </div>
   );
